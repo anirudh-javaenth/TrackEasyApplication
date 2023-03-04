@@ -9,6 +9,6 @@ public class TrackEasyTestController {
     @PostMapping(value = "/test")
     @ResponseStatus(HttpStatus.OK)
     public String testAPI(@RequestHeader(value = "LOGGED_IN_USER", required = true) String loggedInUser){
-        return "I am inside TestAPI";
+        return "I am inside TestAPI Hello";
     }
 }
